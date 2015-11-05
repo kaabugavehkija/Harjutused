@@ -1,5 +1,7 @@
 package teema1;
 
+import java.util.Scanner;
+
 /**
  * Juhuslikkus
  *
@@ -21,6 +23,20 @@ package teema1;
  */
 public class Harjutus3_Juhuslikkus {
     public static void main(String[] args) {
-
+        while (true) {
+            Scanner kullvoikiri = new Scanner(System.in);
+            System.out.println("sisestus");
+            int kumb = kullvoikiri.nextInt();
+            int arvuti = (int) (Math.random() * (2));
+            if (kumb == arvuti) {
+                System.out.println("arvuti " + arvuti + " sina " + kumb + " sinu voit");
+            }
+            if (kumb!=arvuti && kumb<=1&&kumb>=0){
+                System.out.println("möödas");
+            }
+            if (kumb>1||kumb<0){
+                System.out.println("0 voi 1, palun");
+            }
+            }
+        }
     }
-}
