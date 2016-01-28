@@ -15,9 +15,10 @@ public class Harjutus2_meetodid {
         kasutajaSisestus(3, 10, 100);
     }
 
-    public static int tostaKuupi(double arv) {
-        System.out.println(Math.pow(arv, 3));
+    public static double summaKuup(double arv, double arv2) {
+        System.out.println(Math.pow((arv+arv2), 3));
         return 0;
+
     }
 
     public static int kasutajaSisestus(int kysimus, int min, int max) {
